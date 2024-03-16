@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+body {
+  background-size: cover;
+  background-color: #c2e7ff;
+  justify-content: space-between;
+}
+
+#quote-box {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  color: #00b7ff;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.164);
+}
+
+#text {
+  margin-bottom: 10px;
+}
+
+#author {
+  margin-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#new-quote {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#tweet-quote {
+  font-size: 15px;
+}
+
+.btn {
+  margin-right: 10px;
+  text-align: center;
+  background-color: #00b7ff;
+  font-weight: bold;
+  border: none;
+  margin: 15px;
+  color: #fff3c7;
+  text-decoration: none;
+  padding: 13px 12px;
+  transition: 0.3s;
+  /* Dodaj shadow */
+}
+.btn:hover {
+  background-color: rgb(34, 34, 34);
+  color: #00b7ff;
+  /* Prilagodi shadow na hover */
+}
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  25% {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+
+  50% {
+    transform: translate(-50%, -50%) rotate(5deg);
+  }
+
+  75% {
+    transform: translate(-50%, -50%) rotate(-5deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+#quote-box.spin-animation {
+  animation: spin 0.5s ease-in-out;
+}
+.meLol {
+  position: fixed;
+  cursor: default;
+  bottom: 0;
+  margin: 15px;
+  color: #ffffff;
+  font-weight: bold;
+  animation: neon 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes neon {
+  from {
+    text-shadow: 0 0 5px #00b7ff, 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff, 0 0 40px #00b7ff, 0 0 55px #00b7ff, 0 0 75px #00b7ff;
+  }
+
+  to {
+    text-shadow: 0 0 10px #00b7ff, 0 0 20px #00b7ff, 0 0 30px #00b7ff, 0 0 40px #00b7ff, 0 0 50px #00b7ff, 0 0 70px #00b7ff, 0 0 90px #00b7ff;
+  }
+}
